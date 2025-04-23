@@ -22,7 +22,25 @@ h1 {
     letter-spacing: 0.1em;
     padding: 10px;
 }
-form {
+
+h1.site-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    margin: 1rem 0;
+    color: #818cf8;
+}
+
+h2.form-title {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 1rem 0;
+    color: #f4f6fb;
+}
+
+.registerContainer {
     margin: 2rem auto;
     max-width: 700px;
     background: #2d3548;
@@ -136,6 +154,23 @@ button {
     box-shadow: 0 2px 8px 0 #0001;
 }
 
+.button {
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1.2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    background: #3a4256;
+    color: #f4f6fb;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 8px 0 #0001;
+}
+
+.button:hover {
+    background: #105bff;
+    color: #fff;
+}
 
 button[name="delete"]:hover {
     background: #ef4444;
@@ -151,6 +186,63 @@ button[name="register"]:hover,
 button[name="editView"]:hover {
     background: #105bff;
     color: #fff;
+}
+
+.connectButton {
+    text-align: right;
+    margin-bottom: 1rem;
+}
+
+.connectButton .button {
+    display: inline-block;
+}
+
+.connect-button-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1rem;
+}
+
+.connect-button-container .button {
+    background: none;
+    color: #818cf8;
+    border: 1px solid #818cf8;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.connect-button-container .button:hover {
+    background: #818cf8;
+    color: #fff;
+    border-color: #fff;
+}
+
+.top-right {
+    display: flex;
+    justify-content: flex-end;
+    margin: 1rem;
+}
+
+.top-right .button {
+    background: none;
+    color: #818cf8;
+    border: 1px solid #818cf8;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.top-right .button:hover {
+    background: #818cf8;
+    color: #fff;
+    border-color: #fff;
 }
 
 @media (max-width: 1300px) {
@@ -221,6 +313,31 @@ button[name="editView"]:hover {
     .table-responsive::-webkit-scrollbar-thumb {
         background: #4b5670;
         border-radius: 3px;
+    }
+
+    h1.site-title {
+        font-size: 2rem;
+    }
+
+    h2.form-title {
+        font-size: 1.5rem;
+    }
+
+    .top-right {
+        justify-content: center;
+        margin: 1rem 0;
+        order: 1; 
+    }
+
+    .top-right .button {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    .connect-button-container {
+        justify-content: center;
+        margin-bottom: 1rem;
+        order: 1; /* Ensure it appears between h1 and h2 */
     }
 }
 

@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -11,10 +10,15 @@
 </head>
 
 <body>
-
+    <h1 class="site-title">Social HUB</h1>
     <div class="main-container">
-        <h1>Formulaire d'inscription</h1>
-        <form action="/" method="POST">
+        <div class="connect-button-container">
+            <form action="/login" method="POST">
+                <button type="submit" class="button">Se connecter</button>
+            </form>
+        </div>
+        <h2 class="form-title">Formulaire d'inscription</h2>
+        <form class="registerContainer" action="/" method="POST">
             <div class="form-row">
                 <input type="text" name="firstName" placeholder="Prénom">
                 <input type="text" name="lastName" placeholder="Nom">
@@ -23,7 +27,7 @@
                 <button type="submit" name="register">S'inscrire</button>
             </div>
         </form>
-        <p><?=isset($err) ? $err : ""?></p>
+        <p><?= isset($err) ? $err : (isset($success) ? $success : "") ?></p>
         <form action="" method="POST" class="table-form">
             <div class="table-responsive">
                 <table>
