@@ -357,6 +357,15 @@ p {
     margin: 0.5rem 0 0 0;
     font-size: 1rem;
 }
+
+.success-message {
+    color: #22c55e;
+    text-align: center;
+    margin: 0.5rem 0 0 0;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
 .actions {
     display: flex;
     flex-direction: row;

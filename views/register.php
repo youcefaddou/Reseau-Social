@@ -25,9 +25,14 @@
                 <input type="email" name="mail" placeholder="Email">
                 <input type="password" name="password" placeholder="Mot de passe">
                 <button type="submit" name="register">S'inscrire</button>
+                <?php if (isset($success)): ?>
+                    <p class="success-message"><?= $success ?></p>
+                <?php endif; ?>
+                <?php if (isset($err)): ?>
+                    <p><?= $err ?></p>
+                <?php endif; ?>
             </div>
         </form>
-        <p><?= isset($err) ? $err : (isset($success) ? $success : "") ?></p>
         <form action="" method="POST" class="table-form">
             <div class="table-responsive">
                 <table>
