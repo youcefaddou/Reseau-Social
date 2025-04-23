@@ -35,11 +35,12 @@ h2 {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    font-weight: 500;
     padding: 1.2rem 2rem 0 0;
 }
 
 .LogoutButton {
-    background: #ef4444;
+    background: #c52828;
     color: #fff;
     border: none;
     border-radius: 0.5rem;
@@ -51,7 +52,7 @@ h2 {
     transition: background 0.2s;
 }
 .LogoutButton:hover {
-    background: #b91c1c;
+    background: #680f0f;
 }
 
 .post-create-container {
@@ -172,19 +173,19 @@ h2 {
 }
 
 .post-edit-btn {
-    background: #22c55e;
+    background: #15b951;
     color: #fff;
 }
 .post-edit-btn:hover {
-    background: #16a34a;
+    background: #0e5628;
 }
 
 .post-delete-btn {
-    background: #ef4444;
+    background: #c52828;
     color: #fff;
 }
 .post-delete-btn:hover {
-    background: #b91c1c;
+    background: #680f0f;
 }
 
 @media (max-width: 800px) {
