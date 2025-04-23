@@ -15,6 +15,21 @@ class Router
                     header("Location: /login");
                     exit;
                 }
+            } elseif ($uri === "/post/create") {
+                require_once '../src/controllers/PostController.php';
+                $controller = new PostController();
+                $controller->create();
+                exit;
+            } elseif ($uri === "/post/delete") {
+                require_once '../src/controllers/PostController.php';
+                $controller = new PostController();
+                $controller->delete();
+                exit;
+            } elseif ($uri === "/post/edit") {
+                require_once '../src/controllers/PostController.php';
+                $controller = new PostController();
+                $controller->edit();
+                exit;
             } elseif ($uri !== "/") {
                 $controller = ucfirst(explode('/', $uri)[1]) . "Controller";
                 if (class_exists($controller)) {
