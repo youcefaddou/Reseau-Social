@@ -11,7 +11,7 @@ require_once("../src/models/User.php");
 //le controller abstract
 require_once('../src/controllers/Controller.php');
 //les autres controlleurs
-// require_once('../src/controllers/MainController.php');
+require_once('../src/controllers/MainController.php');
 require_once('../src/controllers/RegisterController.php');
 require_once('../src/controllers/LoginController.php');
 
