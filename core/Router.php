@@ -30,6 +30,11 @@ class Router
                 $controller = new PostController();
                 $controller->edit();
                 exit;
+            } elseif ($uri === "/logout") {
+                require_once '../src/controllers/LogoutController.php';
+                $controller = new LogoutController();
+                $controller->index();
+                exit;
             } elseif ($uri !== "/") {
                 $controller = ucfirst(explode('/', $uri)[1]) . "Controller";
                 if (class_exists($controller)) {
