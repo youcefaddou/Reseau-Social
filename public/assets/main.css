@@ -1,0 +1,261 @@
+body {
+    background: #23293a;
+    color: #f4f6fb;
+    font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #2d3548;
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 24px 0 #0002;
+}
+
+h1.site-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    margin: 1rem 0 2rem 0;
+    color: #818cf8;
+}
+
+h2 {
+    color: #f4f6fb;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.logout-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-weight: 500;
+    padding: 1.2rem 2rem 0 0;
+}
+
+.LogoutButton {
+    background: #c52828;
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1.2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    margin-bottom: 2rem;
+    transition: background 0.2s;
+}
+.LogoutButton:hover {
+    background: #680f0f;
+}
+
+.post-create-container {
+    background: #23293a;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 8px 0 #0001;
+}
+
+.post-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.post-title-input,
+.post-content-textarea {
+    background: #3a4256;
+    color: #f4f6fb;
+    border: 1px solid #4b5670;
+    border-radius: 0.5rem;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: border 0.2s;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.post-title-input:focus,
+.post-content-textarea:focus {
+    outline: none;
+    border-color: #818cf8;
+    background: #23293a;
+}
+
+.post-content-textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.post-submit-btn {
+    background: #818cf8;
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+    align-self: flex-end;
+}
+.post-submit-btn:hover {
+    background: #6366f1;
+}
+
+.posts-list-container {
+    margin-top: 2rem;
+}
+
+.posts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.post-card {
+    background: #3a4256;
+    border-radius: 1rem;
+    padding: 1.25rem 1.5rem;
+    box-shadow: 0 2px 8px 0 #0001;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.post-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #818cf8;
+}
+
+.post-author {
+    font-size: 1rem;
+    color: #b6bdd6;
+    font-style: italic;
+}
+
+.post-content {
+    font-size: 1.05rem;
+    color: #f4f6fb;
+    margin-bottom: 0.5rem;
+}
+
+.post-actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.post-edit-btn,
+.post-delete-btn {
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.4rem 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+
+.post-form .post-edit-btn {
+    width: 100%;
+    min-width: 0;
+    padding: 0.4rem 1rem;
+    align-self: unset;
+    display: inline-block;
+}
+
+.post-edit-btn {
+    background: #15b951;
+    color: #fff;
+}
+.post-edit-btn:hover {
+    background: #0e5628;
+}
+.post-actions {
+    width: 100%;
+}
+.post-delete-btn {
+    background: #c52828;
+    color: #fff;
+}
+.post-delete-btn:hover {
+    background: #680f0f;
+}
+
+.post-confirm-btn {
+    background: #818cf8;
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.4rem 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+    width: auto;
+    min-width: 0;
+    flex: 1 1 0;
+    text-align: center;
+    margin: 0;
+}
+.post-confirm-btn:hover {
+    background: #6366f1;
+}
+
+.edit-actions {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.edit-actions .post-edit-btn,
+.edit-actions .post-delete-btn {
+    flex: 1 1 0;
+    min-width: 0;
+    width: auto;
+    text-align: center;
+}
+
+@media (max-width: 800px) {
+    .main-container {
+        max-width: 98vw;
+        padding: 1rem;
+    }
+    .post-card {
+        padding: 1rem;
+    }
+    .logout-container {
+        padding: 1rem 1rem 0 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .main-container {
+        padding: 0.5rem;
+    }
+    h1.site-title {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.1rem;
+    }
+    .post-card {
+        padding: 0.7rem;
+    }
+}
