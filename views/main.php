@@ -36,6 +36,7 @@ $posts = PostRepository::getAllPosts();
             </form>
         </div>
         <div class="posts-list">
+        <h2>Fil des Posts</h2>
         <?php foreach ($posts as $post): ?>
             <div class="post-card">
                 <div class="post-header">
