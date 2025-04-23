@@ -14,7 +14,7 @@ require_once('../src/controllers/Controller.php');
 require_once('../src/controllers/MainController.php');
 require_once('../src/controllers/RegisterController.php');
 require_once('../src/controllers/LoginController.php');
-
+require_once('../src/controllers/PostController.php');
 
 $router = new Router();
 $router->start();
