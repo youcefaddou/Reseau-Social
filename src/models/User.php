@@ -26,4 +26,7 @@ class User extends UserRepository
     public function setMail($mail) { $this->mail = $mail;}
     public function getPassword() { return $this->password; }
     
+    public function login($mail, $password){
+        
+    }
 }
